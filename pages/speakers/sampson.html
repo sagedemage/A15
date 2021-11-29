@@ -3,19 +3,30 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>San Joaquin Valley Town Hall</title>
 	<link rel="shortcut icon" href="../../images/favicon.ico">
 	<link rel="stylesheet" href="../../styles/normalize.css">
 	<link rel="stylesheet" href="../../styles/speaker.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="../../js/jquery.slicknav.min.js"></script>
+	<link rel="stylesheet" href="../../styles/slicknav.css">
 </head>
 
 <body>
+	<script>
+		$(function(){
+			$('#nav_menu').slicknav({
+				prependTo: '#mobile_menu'
+			});
+		});
+	</script>
 	<header>
 		<img src="../../images/town_hall_logo.gif" alt="town hall logo" height="80">
 		<h2> San Joaquin Valley Town Hall </h2> 
 		<h3> Celebrating our <em class="shadow">75<sup>th</sup></em> Year </h3>
 	</header>
+	<nav id ="mobile_menu"></nav>
 	<ul id="nav_menu">
 		<li><a href="../../index.html">Home</a></li>
 		<li><a href="../speakers.html">Speakers</a></li>
@@ -75,21 +86,23 @@
 		
 		<aside>
 			<h2> Guest speakers </h2>
-			<h3> October <br>
-			<a href="toobin.html"> Jeffrey Toobin </a></h3>
-			<img src="../../images/toobin75.jpg" alt="Jeffrey Toobin">
+			<div>
+				<h3> October <br>
+				<a href="toobin.html"> Jeffrey Toobin </a></h3>
+				<img src="../../images/toobin75.jpg" alt="Jeffrey Toobin">
 	
-			<h3> November <br>
-			<a href="sorkin.html"> Andrew Ross Sorkin </a></h3>
-			<img src="../../images/sorkin75.jpg" alt="Andrew Ross Sorkin">
+				<h3> November <br>
+				<a href="sorkin.html"> Andrew Ross Sorkin </a></h3>
+				<img src="../../images/sorkin75.jpg" alt="Andrew Ross Sorkin">
 	
-			<h3> January <br>
-			<a href="chua.html"> Amy Chua </a></h3>
-			<img src="../../images/chua75.jpg" alt="Amy Chua">
-			
-			<h3> February <br>
-			<a href="sampson.html"> Scott Sampson </a></h3>
-			<img src="../../images/sampson75.jpg" alt="Scott Sampson">	
+				<h3> January <br>
+				<a href="chua.html"> Amy Chua </a></h3>
+				<img src="../../images/chua75.jpg" alt="Amy Chua">
+				
+				<h3> February <br>
+				<a href="sampson.html"> Scott Sampson </a></h3>
+				<img src="../../images/sampson75.jpg" alt="Scott Sampson">
+			</div>
 		</aside>
 	</main>
 	
