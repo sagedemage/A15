@@ -1,0 +1,285 @@
+/* tablet landscape and desktop layout (960px or more) */
+
+/* the styles for body */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 99%; /*800px*/
+	max-width: 960px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+
+/* Styles for header */
+header {
+	border-bottom: 3px solid #931420;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 5%, white 35%, white 50%, white 80%, #f6bb73 95%, #f6bb73 100%); 
+
+}
+
+header img {
+	float: left;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+header h2 {
+	font-size: 170%;
+	color: #800000;
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+
+/* Styles for main */
+main {
+	clear: left;
+}
+
+/* Styles for h2 elements in section and aside */
+section h2, aside h2 {
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25em; 
+}
+
+/* Styles for section */
+section {
+	width: 70.3%; /* 525px */
+	float: right;
+	padding-bottom: 2.1%; /* 20px */
+	padding-left: 2.1%; /* 20px */
+	padding-right: 2.1%; /* 20px */
+}
+
+section p {
+	padding-bottom: .5em;
+}
+
+section blockquote {
+	padding-left: 2em;
+	padding-right: 2em;
+	font-style: italic;
+
+}
+
+section ul {
+	padding-bottom: .25em;
+	padding-left: 1.25em; 
+}
+
+section li {
+	padding-bottom: .35em;
+}
+
+section img {
+	float: right;
+	margin-top: 4px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	border: 1px solid black;
+}
+
+/* Styles for aside */
+aside {
+	width: 22.4%; /*target / parent * 100 = result*/ /* 215px */
+	/* 215 / 800 * 100 = 28.9% */ /*22.4%*/
+	/* 215 / 960 * 100 = 22.4% */
+	float: left;
+	padding-left: 2.1%; /*20px*/
+	padding-bottom: 2.1%; /*20px*/
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+aside img {
+	padding-bottom: 1em;
+}
+
+/* Styles for footer */
+footer {
+	background-color: #931420; 
+	color: white;
+	clear: both;
+	margin-bottom: -1px;
+	margin-left: -1px;
+	margin-right: -1px;
+}
+
+footer p {
+	text-align: center; 
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+article {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+
+article img {
+	float: right;
+	margin-top: 4px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	border: 1px solid black;
+	max-width: 40%;
+	min-width: 150px;
+}
+
+article h2 {
+	padding-top: 0;
+}
+
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+/* Styles for other elements */
+h1 {
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin: 0;
+}
+
+a:hover {
+	font-style: italic;
+}
+
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+
+.text_before_image {
+	width: 250px;
+}
+
+#nav_menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+#nav_menu li {
+	float: left;
+	width: 20%; /* 192px || 160 / 960 * 100 */
+}
+
+#nav_menu li a {
+	display: block;
+	/*width: 16.7%; /* 160 px* || 160 / 960 * 100 */
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#nav_menu .current {
+	color: yellow;
+}
+
+.sub_menu {
+	display: none;
+	position: absolute;
+	top: 50px;
+	list-style-type: none;
+	width: 100%;
+}
+
+.sub_menu li {
+	clear: both;
+}
+
+.dropbtn {
+	display: inline-block;
+}
+
+.dropbtn:hover .sub_menu {
+	display: block;
+	position: absolute;
+	top: 50px;
+}
+
+#nav_menu::after {
+	clear: both;
+	display: block;
+	content: "\00a0";
+}
+
+ul {
+	list-style-type: circle;
+}
+
+/* Universal Reset Selector */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) {
+	h1 {
+		font-size: 135%;
+	}
+
+	section h2, aside h2 {
+		font-size: 120%; 
+	}
+}
+
+/* mobile landscape layout (480px to 767px) */
+@media only screen and (max-width: 767px) {
+	header img {
+		float: none;
+		text-align: center;
+	}
+
+	section, aside {
+		float: none;
+		width: 95.8%;
+	}
+
+	aside {
+		padding-right: 2.1%;
+	}
+	article img {
+		max-width: 30%;
+	}
+	aside div {
+		column-count: 2;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+	}
+}
+
+/* mobile portrait layout (479px or less) */
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 90%;
+	}
+}
+
+
+
+
