@@ -201,10 +201,7 @@ a:hover {
 
 .sub_menu {
 	display: none;
-	position: absolute;
-	top: 50px;
 	list-style-type: none;
-	width: 100%;
 }
 
 .sub_menu li {
@@ -215,10 +212,10 @@ a:hover {
 	display: inline-block;
 }
 
-.dropbtn:hover .sub_menu {
+#nav_menu .dropbtn:hover .sub_menu {
 	display: block;
 	position: absolute;
-	top: 50px;
+	width: 100%;
 }
 
 #nav_menu::after {

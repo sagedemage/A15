@@ -15,6 +15,7 @@
 	display: block;
 	line-height: 1.188em;
 	float: left;
+	
 }
 .slicknav_menu .slicknav_icon {
 	float: left;
@@ -99,6 +100,7 @@
 .slicknav_menu {
 	background: #4c4c4c;
 	padding: 5px;
+	display: none;
 }
 .slicknav_nav {
 	color: #fff;
@@ -144,4 +146,36 @@
 }
 .slicknav_nav .slicknav_txtnode {
 	margin-left: 15px;
+}
+/* tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) {
+	#nav_menu {
+		display: none;
+	}
+	.slicknav_menu {
+		background: #800000 !important;
+		display: block;
+	}
+}
+
+/* mobile landscape layout (480px to 767px) */
+@media only screen and (max-width: 767px) {
+	.js #nav_menu {
+		display: none;
+	}
+	.slicknav_menu {
+		background: #800000 !important;
+		display: block;
+	}
+}
+
+/* mobile portrait layout (479px or less) */
+@media only screen and (max-width: 479px) {
+	.js #nav_menu {
+		display: none;
+	}
+	.slicknav_menu {
+		background: #800000 !important;
+		display: block;
+	}
 }
